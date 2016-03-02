@@ -1,0 +1,20 @@
+{
+  "curly":      true,
+  "expr":       true,
+  "newcap":     true,
+  "quotmark":   "single",
+  "regexdash":  true,
+  "trailing":   true,
+  "undef":      true,
+  "unused":     false,
+  "maxerr":     100,
+  "eqnull":     true,
+  "sub":        false,
+  "browser":    true,
+  "node":       true,
+  "esnext":     true,
+  "globals": {
+    "$":    false,
+    "gerritReady":   false
+  }
+}

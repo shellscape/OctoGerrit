@@ -1,0 +1,132 @@
+/*
+ * OctoGerrit v{{version}}
+ * A modern, clean, and usable theme for Gerrit modeled after Github.
+ *
+ * Created by Andrew Powell <andrew@shellscape.org>
+ * https://github.com/shellscape/OctoGerrit
+ * MIT License
+ *
+ */
+
+@import 'vars';
+@import 'reset';
+
+div.screen {
+  margin: 0 auto;
+  width: 990px;
+}
+
+table.screenHeader {
+  display: block !important;
+}
+
+#gerrit_btmmenu {
+  padding: 20px;
+}
+
+#gerrit_btmmenu > * {
+  display: none;
+}
+
+.inputFieldTypeHint {
+  color: #ccc !important;
+}
+
+.com-google-gwtexpui-user-client-Tooltip-Css-tooltip {
+  display: none !important;
+}
+
+.@{topic}-edit {
+  /* transparent image */
+  content: url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  &:after {
+    content: '\f044';
+    font-family: 'FontAwesome';
+    font-size: 16px;
+  }
+}
+
+.@{change}-projectSettings {
+  color: #333;
+  height: 16px;
+  width: 16px;
+
+  &:before {
+    content: '\f013';
+    font-family: 'FontAwesome';
+    font-size: 16px;
+  }
+
+  &:hover {
+    color: #4078c0 !important;
+    text-decoration: none;
+  }
+
+  img {
+    display: none;
+  }
+}
+
+.@{change}-pushCertStatus {
+  display: none;
+}
+
+div.gerrit-size {
+	white-space: nowrap;
+
+  span.gerrit-size-block {
+    background: #ddd;
+  	display: inline-block;
+    height: 8px;
+    margin-left: 1px;
+    vertical-align: middle;
+    width: 8px;
+  }
+
+  span.gerrit-size-block-add {
+    background: #6cc644;
+  }
+
+  span.gerrit-size-block-rem {
+    background: #bd2c00;
+  }
+}
+
+div.gerrit-state {
+  color: #6cc644;
+  font-family: 'FontAwesome';
+  font-size: 16px;
+  height: 16px;
+	text-align: center;
+  width: 20px;
+
+  &-plus-one:before {
+    content: '\f087';
+  }
+
+  &-plus-two:before {
+    content: '\f164';
+  }
+
+  &-minus-one:before {
+    color: #bd2c00;
+    content: '\f088';
+  }
+
+  &-minus-two:before {
+    color: #bd2c00;
+    content: '\f165';
+  }
+}
+
+@import 'nav';
+@import 'popups';
+@import 'tables';
+@import 'review';
+@import 'diff-sidebyside';
+@import 'diff-unified';

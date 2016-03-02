@@ -1,0 +1,30 @@
+{
+  "borderZero": false,
+  "comment": false,
+  "duplicateProperty": {
+    "exclude": [
+      "-webkit-transition-property",
+      "background",
+      "background-image",
+      "src",
+      "transition-property",
+      "width"
+    ]
+  },
+  "emptyRule": false,
+  "finalNewline": false,
+  "hexNotation": false,
+  "hexLength": false,
+  "idSelector": false,
+  "importantRule": false,
+  "propertyUnits": false,
+  "qualifyingElement": false,
+  "singleLinePerProperty": false,
+  "singleLinePerSelector": false,
+  "spaceAfterPropertyColon": false,
+  "spaceBeforeBrace": false,
+  "trailingSemicolon": true,
+  "urlFormat": false,
+  "urlQuotes": false,
+  "zeroUnit": "no_unit"
+}

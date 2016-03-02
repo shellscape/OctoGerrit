@@ -1,0 +1,41 @@
+/* Popups and Menus */
+
+div.userInfoPopup,
+div.suggestBoxPopup,
+div.@{change}-replyBox {
+  background-clip: padding-box;
+  background-color: #fff;
+  border: 1px solid rgba(200, 200, 200, 0.4);
+  border-radius: 3px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 20px;
+  margin-top: 4px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+}
+
+div.suggestBoxPopup {
+  margin: 4px 0 0 -2px;
+  width: 264px;
+
+  table {
+    width: 100%;
+  }
+
+  .suggestPopupMiddleLeft,
+  .suggestPopupMiddleRight {
+    display: none;
+  }
+
+  .item-selected {
+    background: #eee;
+  }
+}
+
+div.suggestPopupContent table {
+  padding-left: 2px;
+  width: 260px;
+}

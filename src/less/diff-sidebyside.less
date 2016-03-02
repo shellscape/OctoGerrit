@@ -1,0 +1,280 @@
+
+div.@{sbs}-sbs {
+	left: 0;
+  margin-left: 1%;
+  position: absolute;
+  width: 98%;
+
+  * {
+    font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+}
+
+div.@{header}-header {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #d8d8d8;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  height: auto;
+  line-height: 32px !important;
+  padding: 5px 10px;
+}
+
+.@{diffTable}-patchSetNav {
+  background: #fff;
+}
+
+.@{diffTable}-psNavA,
+.@{diffTable}-psNavB{
+  border-bottom: 1px solid #eee;
+}
+
+div.@{header}-navigation {
+  font-size: 0 !important;
+  height: 42px;
+  line-height: 42px !important;
+  margin-right: 10px;
+  right: 0px;
+  top: 0;
+
+  &:after,
+  a:after {
+    color: #777;
+    content: '\f190';
+    font-family: 'FontAwesome';
+    font-size:  16px;
+    vertical-align: middle;
+  }
+
+  &:after {
+  	content: '\f013' !important;
+    margin-left: -10px;
+  }
+
+  img {
+    display: inline-block;
+    margin-left: 6px;
+    margin-right: -5px;
+    opacity: 0;
+    vertical-align: middle;
+  }
+
+  a,
+  div {
+    display: inline-block;
+    float: none;
+    line-height: 20px !important;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  a {
+    height: 20px;
+    margin: 0 5px;
+    width: 20px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+div.@{header}-linkPanel {
+  img {
+    display: none;
+  }
+
+  a:after {
+  	content: '\f008' !important;
+  }
+}
+
+a.@{diffComment}-goNext:after {
+	content: '\f18e' !important;
+  padding-top: 3px;
+}
+
+a.@{diffComment}-goUp:after {
+	content: '\f01b' !important;
+}
+
+div.CodeMirror-gutters {
+  background: #fff;
+	border: solid #eee;
+  border-width: 0 1px;
+  padding: 0 10px;
+  width: 23px;
+
+  &:first-child {
+  	border-left: 0;
+  }
+}
+
+div.net-codemirror-lib-CodeMirror-Style-activeLine div.CodeMirror-linenumber {
+	background-color: #edf2f9 !important;
+  color: #555;
+}
+
+.@{diffTable}-a {
+
+  .@{diffTable}-intralineBg {
+    background: #ffecec !important;
+  }
+
+  .@{diffTable}-diff {
+    background: #f1c0c0 !important;
+  }
+
+}
+
+.@{diffTable}-b {
+  .@{diffTable}-intralineBg {
+    background: #eaffea !important;
+  }
+
+  .@{diffTable}-diff {
+    background: #c1e9c1 !important;
+  }
+}
+
+div.@{diffTable}-difftable {
+  border: 1px solid #ddd;
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+
+  .CodeMirror-linenumber {
+    height: auto;
+  }
+
+  .CodeMirror pre span {
+    display: inline-block;
+    padding: 0 !important;
+  }
+}
+
+.com-google-gerrit-client-diff-SkipBar_BinderImpl_GenCss_style-skipBar {
+  background-color: #f4f7fb;
+  height: auto;
+  padding: 6px 0;
+
+  a {
+    color: rgba(0, 0, 0, 0.3) !important;
+  }
+}
+
+td.@{diffPatchBox}-iconCell {
+	padding: 4px 0 0 20px;
+
+  img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+}
+
+.@{diffPatchBox}-linkCell {
+  img {
+    display: none;
+  }
+
+  a:last-child:after {
+    color: #777;
+    content: '\f019';
+    display: inline-block;
+    font-family: 'FontAwesome';
+    font-size: 14px;
+    padding: 0 3px;
+  }
+}
+
+.@{diffComment}-commentWidgets {
+	background: #fff;
+  border: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: none;
+  margin: 0;
+  padding: 10px 14px 10px 10px;
+}
+
+div.@{diffComment}-commentBox {
+  background-clip: padding-box;
+  background-color: #fff;
+  border: 1px solid #bfccd1;
+  border-radius: 3px;
+  color: #666;
+  font-size: 12px;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  position: relative;
+
+  img.@{diffPublished}-avatar {
+    display: none;
+  }
+
+  button div {
+  	color: #333 !important;
+    font-weight: bold !important;
+    width: auto;
+  }
+}
+
+div.@{diffComment}-header {
+	background-color: #f2f8fa !important;
+  padding: 6px 10px;
+}
+
+div.@{diffPublished}-name {
+  color: #333 !important;
+  font-weight: bold !important;
+}
+
+div.@{diffComment}-summary {
+  top: 6px;
+  width: 62%;
+}
+
+div.@{diffComment}-date {
+  right: 10px;
+  top: 6px;
+}
+
+div.@{diffComment}-message {
+  border-top: 1px solid #dde4e6;
+  padding: 10px;
+}
+
+div.@{diffComment}-contents {
+  margin: 0;
+  padding: 0;
+
+  * {
+    font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important;
+  }
+
+  /* the buttons containing element */
+  > div:last-child {
+    border-top: 1px solid #dde4e6;
+    padding: 10px;
+    text-align: right;
+  }
+}
+
+div.@{diffDraft}-draft {
+  background: transparent !important;
+  border-radius: 0 !important;
+  color: #333;
+  font-weight: bold !important;
+  text-align: left;
+}
+
+textarea.@{diffDraft}-editArea {
+  display: block;
+  margin-bottom: 10px;
+  width: 99%;
+}
+
+button.@{diffDraft}-discard {
+  left: auto;
+}

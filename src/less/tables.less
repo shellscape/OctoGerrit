@@ -1,0 +1,261 @@
+
+/* Table Element Styles */
+
+table.screenHeader {
+  margin: 3px auto 8px auto;
+  width: 990px;
+}
+
+#change_infoTable {
+
+  .gwt-InlineHyperlink {
+    color: #333;
+    display: inline-block;
+    min-height: 16px;
+    padding-right: 22px;
+    width: 100%;
+  }
+
+  tr:nth-child(7) div {
+    position: relative;
+  }
+
+  tr:nth-child(7) .gwt-InlineHyperlink:after {
+    content: '\f044';
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  tr:nth-child(7) .gwt-InlineHyperlink:hover:after {
+    color: #4078c0 !important;
+  }
+}
+
+table.changeTable {
+  position: relative;
+
+  .activeRow,
+  &.accountDashboard .activeRow,
+  &.accountDashboard.changeTable .activeRow a {
+    background: #e8f0f8 !important;
+  }
+
+  td {
+
+    &.cSIZE {
+    	width: 46px;
+    }
+
+    &.dataCell {
+      border-bottom: 1px solid #e5e5e5;
+      border-left: 1px solid #e5e5e5;
+      border-right: 0;
+    }
+
+    &:last-child {
+      border-right: 1px solid #e5e5e5 !important;
+    }
+  }
+
+  tbody tr:first-child {
+
+    td {
+    	background: #f8f8f8 !important;
+      border: 0;
+      border-bottom: 1px solid #e5e5e5 !important;
+      border-top: 1px solid #e5e5e5 !important;
+      color: #ccc;
+      padding: 12px 0;
+      text-shadow: 1px 1px #fff;
+
+      &:last-child {
+        border-radius: 0 3px 0 0;
+        border-right: 1px solid #e5e5e5 !important;
+        padding-right: 10px;
+      }
+
+      &.dataHeader {
+
+        &:nth-child(5) {
+          overflow: hidden;
+          text-indent: -1000px;
+          width: 20px;
+        }
+
+        &:nth-child(4) {
+          overflow: hidden;
+          text-indent: -1000px;
+        }
+      }
+    }
+
+    td:first-child,
+    td.dataHeader:nth-child(4) {
+      border-left: 1px solid #e5e5e5 !important;
+      border-radius: 3px 0 0 0;
+   	  padding-left: 10px;
+    }
+
+  }
+}
+
+&.accountDashboard tbody {
+
+  tr:first-child {
+    position: absolute;
+    right: 1px;
+    top: 20px;
+    z-index: 1;
+
+    td.dataHeader {
+      background: transparent !important;
+      border: 1px solid transparent !important;
+      color: #ccc;
+      font-style: normal;
+      text-shadow: 1px 1px #fff;
+
+      &:nth-child(12) {
+        width: 18px;
+      }
+
+      &:nth-child(11) {
+        width: 30px;
+      }
+
+      &:nth-child(10) {
+        width: 54px;
+      }
+
+      &:nth-child(9) {
+        width: 88px;
+      }
+
+      &:nth-child(8) {
+        width: 100px;
+      }
+
+      &:nth-child(7) {
+        width: 100px;
+      }
+
+      &:nth-child(6) {
+        width: 124px;
+      }
+
+      &:nth-child(4) {
+      	display: none;
+      }
+    }
+  }
+}
+
+td.sectionHeader,
+table.changeTable.accountDashboard td.sectionHeader:last-child {
+  background: #fff !important;
+  border-right: 0 !important;
+  border-top: 10px solid #fff !important;
+  padding: 0 !important;
+  position: relative;
+}
+
+td.sectionHeader a {
+  background-color: #f8f8f8 !important;
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 3px 3px 0 0;
+  display: block;
+  font-weight: bold;
+  padding: 12px 10px;
+}
+
+td.cSUBJECT a {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 466px;
+}
+
+td.cOWNER {
+  width: 108px;
+}
+
+td.cSUBJECT,
+td.dataCell:nth-child(7),
+td.cOWNER {
+  /* repo name cell */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+td.dataCell:nth-child(7) a {
+  /* repo name cell */
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 94px;
+}
+
+td.dataCell:nth-child(8),
+td.dataHeader:nth-child(8) {
+  /* branch cell */
+  display: none;
+}
+
+td.iconCell,
+td.iconHeader {
+  display: none;
+}
+
+td.cAPPROVAL:nth-child(12) {
+  div.gerrit-state-minus-two:before {
+    content: '\f126';
+  }
+
+  div.gerrit-state-plus-two:before {
+    content: '\f126';
+  }
+}
+
+td.cSTATUS {
+  max-width: 0px !important;
+  overflow: hidden;
+  position: relative;
+  text-align: right;
+  text-indent: 100px;
+  text-overflow: clip;
+  width: 15px !important;
+
+  &:after {
+    background: #6cc644;
+    border-radius: 3px;
+    color: #fff;
+    content: '\f126';
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    height: 16px;
+    padding: 2px;
+    position: absolute;
+    right: 2px;
+    text-indent: -100px;
+    top: 2px;
+    width: 16px;
+  }
+
+  &.gerrit-status-abandoned:after {
+  	background: #fc6d26;
+  }
+
+  &.gerrit-status-conflict:after {
+    background: #bd2c00;
+  }
+
+  &.gerrit-status-merged:after {
+    background: #6e5494;
+  }
+}
