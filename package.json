@@ -1,6 +1,6 @@
 {
   "name": "octogerrit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A modern, clean, and usable theme for Gerrit",
   "repository": {
     "type": "git",
