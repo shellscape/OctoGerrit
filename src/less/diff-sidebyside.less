@@ -32,6 +32,19 @@ div.@{header}-header {
   border-bottom: 1px solid #eee;
 }
 
+.@{diffTable}-range {
+  background: #fff !important;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: -1px;
+}
+
+.@{diffTable}-rangeHighlight {
+  background: #fff !important;
+  border: 1px solid #333;
+  font-weight: bold !important;
+}
+
 div.@{header}-navigation {
   font-size: 0 !important;
   height: 42px;
@@ -195,7 +208,8 @@ td.@{diffPatchBox}-iconCell {
   border-bottom: 1px solid #eee;
   box-shadow: none;
   margin: 0;
-  padding: 10px 14px 10px 10px;
+  max-width: none;
+  padding: 10px 14px 15px 10px;
 }
 
 div.@{diffComment}-commentBox {
@@ -277,4 +291,32 @@ textarea.@{diffDraft}-editArea {
 
 button.@{diffDraft}-discard {
   left: auto;
+}
+
+div.@{diff}InsertCommentBubble_BinderImpl_GenCss_style-bubble {
+  background-clip: padding-box;
+  background-color: #fff;
+  border: 1px solid rgba(200, 200, 200, 0.4);
+  border-radius: 3px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  padding: 4px;
+
+  img {
+    display: none;
+  }
+}
+
+span.@{diff}InsertCommentBubble_BinderImpl_GenCss_style-message {
+  background: #fff !important;
+  border: 0;
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important;
+
+  :before {
+    color: #777;
+    content: '\f27b';
+    font-family: 'FontAwesome';
+    font-size:  16px;
+    padding-right: 10px;
+    vertical-align: middle;
+  }
 }
