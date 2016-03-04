@@ -43,7 +43,7 @@ OctoGerrit was written and tested on `Gerrit v2.12`. If it works with other olde
 versions, that's wonderful! But not something we're going to test. OctoGerrit is
 not guaranteed to work on newer versions, nor the new 'PolyGerrit' being developed.
 
-However, we're always open to improvements and [Contributions](#contributing)!
+However, we're always open to improvements and [Contributions](CONTRIBUTING.md)!
 
 ## License
 
