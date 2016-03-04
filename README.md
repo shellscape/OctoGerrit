@@ -4,7 +4,7 @@ A modern, clean, and usable theme for Gerrit modeled after Github.
 
 This is a **WORK IN PROGRESS**
 
-[Using OctoGerrit](USING.md)
+[Using OctoGerrit](USING.md)  
 [Contributing to OctoGerrit](CONTRIBUTING.md)
 
 ## Show Me
