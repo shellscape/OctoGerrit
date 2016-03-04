@@ -1,3 +1,9 @@
+## Using OctoGerrit with Gerrit Themes
+
+The OctoGerrit Theme files are located in `dist/theme` for each release. Using those files, follow [the instructions here](https://gerrit-review.googlesource.com/Documentation/config-themes.html).
+
+If you're not a Gerrit admin and/or can't update your local Gerrit install, you can opt to use Browser Extensions to use the theme.
+
 ## Using OctoGerrit with Browser Extensions
 
 If you're unable to apply a theme to Gerrit, you can always use browser extensions
