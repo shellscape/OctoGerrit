@@ -2,7 +2,8 @@
 var gulp = require('gulp'),
   path = require('path'),
   mustache = require('gulp-mustache'),
-  pkg = require('./package.json');
+  pkg = require('./package.json'),
+  git = require('simple-git')(__dirname);
 
 gulp.task('dependencies', function() {
   var david = require('gulp-david');
@@ -47,11 +48,20 @@ gulp.task('less', ['test'], function () {
     .pipe(mustache({
   		version: pkg.version
   	}))
-    .pipe(gulp.dest('./dist'));
-
+    .pipe(gulp.dest('./dist'))
+    .pipe(rename('GerritSite.css'))
+    .pipe(gulp.dest('./dist/theme'));
 });
 
-gulp.task('build', ['less'], function () {
+gulp.task('html', ['less'], function () {
+  return gulp.src(path.join(__dirname, '/src/html/*.html'))
+    .pipe(mustache({
+  		version: pkg.version
+  	}))
+    .pipe(gulp.dest('./dist/theme'));
+});
+
+gulp.task('js', ['html'], function () {
   var concat = require('gulp-concat');
 
   return gulp.src(path.join(__dirname, '/src/js/*.js'))
@@ -60,4 +70,12 @@ gulp.task('build', ['less'], function () {
   		version: pkg.version
   	}))
     .pipe(gulp.dest('./dist/'));
+});
+
+gulp.task('build', ['js'], function (done) {
+  git
+    .addTag('v' + pkg.version)
+    .pushTags('origin', function () {
+      done();
+    });
 });

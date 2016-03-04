@@ -1,6 +1,6 @@
 {
   "name": "octogerrit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A modern, clean, and usable theme for Gerrit",
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "gulp-rename": "^1.2.2",
     "jshint": "^2.9.1",
     "jshint-stylish": "^2.1.0",
-    "lesshint": "^1.4.0"
+    "lesshint": "^1.4.0",
+    "simple-git": "^1.27.0"
   }
 }

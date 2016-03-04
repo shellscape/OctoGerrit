@@ -1,7 +1,7 @@
 (function (root) {
 
   root.octogerrit = {
-    version: '1.0.1'
+    version: '1.0.2'
   };
 
   var head = document.getElementsByTagName('head')[0],
