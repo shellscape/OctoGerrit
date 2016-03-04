@@ -6,9 +6,9 @@ This is a **WORK IN PROGRESS**
 
 ## TODO
 
-- Move CSS to LESS, and clean it up.
-- Build Tooling
-- Create an actual Gerrit Theme
+- [x] Move CSS to LESS, and clean it up.
+- [x] Build Tooling
+- [ ] Create an actual Gerrit Theme
 
 ## But Why?
 
