@@ -10,10 +10,20 @@ This is a **WORK IN PROGRESS**
 - [x] Build Tooling
 - [ ] Create an actual Gerrit Theme
 
+## Show Me
+
+![](https://raw.githubusercontent.com/shellscape/OctoGerrit/master/assets/dashboard.png)
+<img src="https://raw.githubusercontent.com/shellscape/OctoGerrit/master/assets/diff-sbs-comments.png" width="734">
+![](https://raw.githubusercontent.com/shellscape/OctoGerrit/master/assets/review-a.png)
+
+<img src="https://raw.githubusercontent.com/shellscape/OctoGerrit/master/assets/review-reply.png" width="461">
+
+You can view more screenshots [here](https://github.com/shellscape/OctoGerrit/tree/master/assets).
+
 ## But Why?
 
-Gerrit is a good tool built on a solid framework. But Gerrit with regard to user
-experience is bad. Really bad. Really, really bad. Functional; yes. Pretty; good lord no.
+Gerrit is a good tool built on a solid framework. But Gerrit, with regard to user
+experience, is bad. Really bad. Really, really bad. Functional? Yes. Pretty? Good lord no.
 
 Gerrit's UX is all over the place. At the time of authoring this theme, the folks
 behind Gerrit are working to move to a new UI framework that will purportedly solve many
