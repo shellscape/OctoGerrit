@@ -37,12 +37,6 @@ of the problems that plagues the current stable version:
 OctoGerrit aims to resolve these issues through brute force using the latest CSS
 techniques and a sprinkle of Javascript.
 
-## Todo List
-
-- [x] Move CSS to LESS, and clean it up.
-- [x] Build Tooling
-- [ ] Create an actual Gerrit Theme
-
 ## Gerrit Versions
 
 OctoGerrit was written and tested on `Gerrit v2.12`. If it works with other older
