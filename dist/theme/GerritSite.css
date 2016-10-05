@@ -668,8 +668,11 @@ div.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-idAndSt
 table.com-google-gerrit-client-change-FileTable-FileTableCss-table {
   width: 100%;
 }
+button.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-highlight {
+  background-image: -webkit-linear-gradient(top, #4d90fe, #4d90fe);
+}
 button.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-highlight div {
-  color: #333 !important;
+  color: #fff !important;
 }
 span.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user {
   font-size: 12px;
