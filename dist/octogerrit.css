@@ -107,9 +107,6 @@ table.screenHeader {
 .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-projectSettings img {
   display: none;
 }
-.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-pushCertStatus {
-  display: none;
-}
 div.gerrit-size {
   white-space: nowrap;
 }
@@ -418,9 +415,6 @@ table.changeTable tbody tr:first-child td.dataHeader:nth-child(4) {
 .accountDashboard tbody tr:first-child td.dataHeader:nth-child(6) {
   width: 124px;
 }
-.accountDashboard tbody tr:first-child td.dataHeader:nth-child(4) {
-  display: none;
-}
 td.sectionHeader,
 table.changeTable.accountDashboard td.sectionHeader:last-child {
   background: #fff !important;
@@ -463,15 +457,6 @@ td.dataCell:nth-child(7) a {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 94px;
-}
-td.dataCell:nth-child(8),
-td.dataHeader:nth-child(8) {
-  /* branch cell */
-  display: none;
-}
-td.iconCell,
-td.iconHeader {
-  display: none;
 }
 td.cAPPROVAL:nth-child(12) div.gerrit-state-minus-two:before {
   content: '\f126';
@@ -955,9 +940,6 @@ div.com-google-gerrit-client-diff-CommentBox-Style-commentBox {
   overflow: hidden;
   position: relative;
 }
-div.com-google-gerrit-client-diff-CommentBox-Style-commentBox img.com-google-gerrit-client-diff-PublishedBox_BinderImpl_GenCss_style-avatar {
-  display: none;
-}
 div.com-google-gerrit-client-diff-CommentBox-Style-commentBox button div {
   color: #333 !important;
   font-weight: bold !important;
@@ -984,7 +966,6 @@ div.com-google-gerrit-client-diff-CommentBox-Style-message {
   padding: 10px;
 }
 div.com-google-gerrit-client-diff-CommentBox-Style-contents {
-  margin: 0;
   padding: 0;
   /* the buttons containing element */
 }
