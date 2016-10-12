@@ -1,8 +1,10 @@
-# OctoGerrit
+# OctoGerrit - Tomologic Edition
 
 A modern, clean, and usable theme for Gerrit modeled after Github.
 
-This is a **WORK IN PROGRESS**
+**This is a fork of https://github.com/shellscape/OctoGerrit with 
+specific changes that suites Tomologic better. General improvement are
+pull requested upstream**
 
 [Using OctoGerrit](USING.md)  
 [Contributing to OctoGerrit](CONTRIBUTING.md)
